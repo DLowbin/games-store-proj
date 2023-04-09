@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Items from './Items';
 import Pagination from './Pagination';
 import itemsList from '../api/fakeApi.json';
 import { paginate } from '../utils/paginate';
 import Header from './Header';
+import Login from './loginForm';
 
 // const list = gamesList;
 const Showcase = () => {
@@ -24,19 +25,29 @@ const Showcase = () => {
 
   const handleCategoryChange = (event) => {
     setCurrentCategory(event.target.name);
-    console.log(event.target.name);
-    console.log(currentCategory);
   };
 
-  function filterItems(data) {
-    const filteredItems = searchValue
-      ? data.filter((item) => item.name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1)
-      : itemsList;
+  const handleCategoryClear = () => {
+    setCurrentCategory('');
+  };
 
-    return filteredItems;
-  }
-  const filteredItems = filterItems(itemsList);
-  const itemsCrop = paginate(filteredItems, currentPage, pageSize);
+  useEffect(() => {
+    console.log(`Category `, currentCategory);
+  }, [currentCategory]);
+
+  // function filterItems(data) {
+  //   const filteredItems = searchValue
+  //     ? data.filter((item) => item.name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1)
+  //     : itemsList;
+
+  //   return filteredItems;
+  // }
+  // const filteredItems = filterItems(itemsList);
+
+  const itemsByCategory = currentCategory
+    ? itemsList.filter((item) => item.category === currentCategory)
+    : itemsList;
+  const itemsCrop = paginate(itemsByCategory, currentPage, pageSize);
 
   return (
     <>
@@ -55,8 +66,9 @@ const Showcase = () => {
           onChange={handleSearch}
         />
       </div>
-      <h2>{!searchValue ? 'Все товары' : `Результат поиска по запросу: ${searchValue}`}</h2>
-      <Header handleChange={handleCategoryChange} />
+      <h2>{!currentCategory ? 'Все товары' : `${currentCategory}`}</h2>
+      <Header handleChange={handleCategoryChange} handleClear={handleCategoryClear} />
+      <Login />
       <Items items={itemsCrop} />
       <Pagination
         itemsCount={count}

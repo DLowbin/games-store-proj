@@ -1,30 +1,49 @@
 import React from 'react';
 
-function Header({ handleChange }) {
+function Header({ handleChange, handleClear }) {
   return (
     <header className="header">
-      <a href="#" className="header__logo"></a>
+      {/* <a href="#" className="header__logo"></a> */}
 
-      <nav className="header__nav">
-        <ul className="header__list">
-          <li className="header__item">
-            <button name="ps-games" onClick={handleChange}>
+      {/* <nav className="header__nav"> */}
+      <ul className="header__list">
+        <li className="header__item">
+          <div className="header__button">
+            <a name="ps-games" onClick={handleChange}>
               Игры PS5
-            </button>
-          </li>
-          <li className="header__item">
-            <button name="xb-games" onClick={handleChange}>
+            </a>
+          </div>
+        </li>
+        <li className="header__item">
+          <div className="header__button xbox">
+            <a name="xb-games" onClick={handleChange}>
               Игры Xbox
-            </button>
-          </li>
-          <li className="header__item">
-            <button onClick={handleChange}>Аксессуары PS5 </button>
-          </li>
-          <li className="header__item">
-            <button onClick={handleChange}>Аксессуары Xbox</button>
-          </li>
-        </ul>
-      </nav>
+            </a>
+          </div>
+        </li>
+        <li className="header__item">
+          <div className="header__button">
+            <a name="ps5-accessories" onClick={handleChange}>
+              Аксессуары PS5
+            </a>
+          </div>
+        </li>
+        <li className="header__item">
+          <div className="header__button xbox">
+            <a name="xb-accessories" onClick={handleChange}>
+              Аксессуары Xbox
+            </a>
+          </div>
+        </li>
+        <li className="header__item">
+          <div className="header__button">
+            <a name="all-items" onClick={handleClear}>
+              Все товары
+            </a>
+          </div>
+        </li>
+      </ul>
+      {/* </nav> */}
     </header>
   );
 }
