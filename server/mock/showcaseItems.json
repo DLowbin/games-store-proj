@@ -5,7 +5,7 @@
     "category": "ps-games",
     "name": "Assasin's Creed Valhalla",
     "image": "./images/ps5_games/assasins_creed_valhalla.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "02bda2771f6f4298a8e51579f9562244",
@@ -13,7 +13,7 @@
     "category": "ps-games",
     "name": "The Avengers",
     "image": "./images/ps5_games/avengers.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "388dd31d43e746bb8dfde4080b6aca20",
@@ -21,7 +21,7 @@
     "category": "ps-games",
     "name": "Death Stranding",
     "image": "./images/ps5_games/death_stranding.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "bb6ce187a82242cc8ed157cffd5fe592",
@@ -29,7 +29,7 @@
     "category": "ps-games",
     "name": "Demon Souls",
     "image": "./images/ps5_games/demon_souls.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "3a7c598533f8489abcb20802e82fab24",
@@ -37,7 +37,7 @@
     "category": "ps-games",
     "name": "Elden Ring",
     "image": "./images/ps5_games/elden_ring.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "5afd38e4149547c2ac9ad80a57e701c4",
@@ -45,7 +45,7 @@
     "category": "ps-games",
     "name": "Far Cry 6",
     "image": "./images/ps5_games/far_cry_6.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "b3989df2da2043eab2263ef62377939d",
@@ -53,7 +53,7 @@
     "category": "games",
     "name": "Ghost of Tsushima",
     "image": "./images/ps5_games/ghost_of_tsushima.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "faee1b039e354c26922aad88c2d02b9c",
@@ -61,7 +61,7 @@
     "category": "games",
     "name": "God of War Ragnarok",
     "image": "./images/ps5_games/god_of_war.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "55b4eb060e3343dbab3b4cd4958abe34",
@@ -69,7 +69,7 @@
     "category": "ps-games",
     "name": "Gran Turismo 7",
     "image": "./images/ps5_games/gran_turismo.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "523ca60f4484480589cb227853508f9a",
@@ -77,7 +77,7 @@
     "category": "ps-games",
     "name": "Hitman",
     "image": "./images/ps5_games/hitman.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "0a762a06bb934dc5bda7a2543ac33c87",
@@ -85,7 +85,7 @@
     "category": "ps-games",
     "name": "Hogearts Legacy",
     "image": "./images/ps5_games/hogwarts_legacy.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "91b10764414b428f85407dee190c1f96",
@@ -93,7 +93,7 @@
     "category": "ps-games",
     "name": "Mortal Kombat 11",
     "image": "./images/ps5_games/mortal_combat.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "01daf09d128d4c9cb014d5563f9abac0",
@@ -101,7 +101,7 @@
     "category": "ps-games",
     "name": "Ratchet and Clank",
     "image": "./images/ps5_games/ratchet_and_clank.png",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "143784b3a0884ec58f1bb95f100fd734",
@@ -109,7 +109,7 @@
     "category": "ps-games",
     "name": "Resident evil Village",
     "image": "./images/ps5_games/re_village.jpg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "82366d83fed4488d84722e6169c9edb7",
@@ -117,7 +117,7 @@
     "category": "ps-games",
     "name": "Returnal",
     "image": "./images/ps5_games/returnal.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "379d8a6a47074c599b992795b1d2f6f1",
@@ -125,7 +125,7 @@
     "category": "ps-games",
     "name": "Spider man. Miles Morales",
     "image": "./images/ps5_games/spider_man_miles.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "326652349e94489cbbf4e4fdafac9c4e",
@@ -133,7 +133,7 @@
     "category": "ps-games",
     "name": "The Last of Us part two",
     "image": "./images/ps5_games/the_last_of_us_2.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "c8e0b65adcf949dcb22b5f813abddfd3",
@@ -141,7 +141,7 @@
     "category": "ps-games",
     "name": "The Last of Us",
     "image": "./images/ps5_games/the_last_of_us.jpeg",
-    "price": 5999
+    "price": "5999"
   },
   {
     "id": "79143b3c568b4b79bfba0283181ff411",
@@ -149,6 +149,6 @@
     "category": "ps-games",
     "name": "Uncharted Collection",
     "image": "./images/ps5_games/uncharted.jpeg",
-    "price": 5999
+    "price": "5999"
   }
 ]

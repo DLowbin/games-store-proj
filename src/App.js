@@ -8,7 +8,7 @@ function App() {
     <>
       {/* <Header /> */}
       <Showcase />
-      <Cart />
+      {/* <Cart /> */}
 
       <div className="App">
         <h1>Project</h1>

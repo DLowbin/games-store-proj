@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header({ handleChange, handleClear }) {
+function Header({ handleChange, handleClear, showCart }) {
   return (
     <header className="header">
       {/* <a href="#" className="header__logo"></a> */}
@@ -39,6 +39,13 @@ function Header({ handleChange, handleClear }) {
           <div className="header__button">
             <a name="all-items" onClick={handleClear}>
               Все товары
+            </a>
+          </div>
+        </li>
+        <li className="header__item">
+          <div className="header__button">
+            <a name="all-items" onClick={showCart}>
+              Корзина
             </a>
           </div>
         </li>

@@ -189,12 +189,13 @@ code {
   align-items: center;
   min-width: 1200px;
   flex-wrap: wrap;
+  color: #fff;
 }
 
 .container .card {
   position: relative;
   width: 280px;
-  height: 300px;
+  height: 350px;
   margin: 30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background-repeat: 15px;
@@ -213,28 +214,38 @@ code {
   display: block;
   height: 250px;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.65);
   width: 100%;
+  left: 0;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   height: 100%;
-  display: none;
+  // display: none;
 }
 
 .cart {
   position: absolute;
-  width: 385px;
+  width: 35%;
   height: 100%;
   right: 0;
-  background: #fff;
-  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  // background: #fff;
+  z-index: 2;
+  // box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  // border-radius: 10px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .box {

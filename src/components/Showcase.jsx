@@ -5,14 +5,33 @@ import itemsList from '../api/fakeApi.json';
 import { paginate } from '../utils/paginate';
 import Header from './Header';
 import Login from './loginForm';
+import Cart from './Cart';
 
-// const list = gamesList;
 const Showcase = () => {
   const count = itemsList.length;
   const pageSize = 6;
+  const [items, setItems] = useState(itemsList);
+  const [cartItems, setCartItems] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchValue, setSearchValue] = useState('');
   const [currentCategory, setCurrentCategory] = useState('');
+  const [displayCart, setDisplayCart] = useState(false);
+
+  useEffect(() => {
+    console.log(items);
+  }, [items]);
+
+  useEffect(() => {
+    console.log(displayCart);
+  }, [displayCart]);
+
+  const handleDisplayCart = () => {
+    setDisplayCart((prevState) => !prevState);
+  };
+
+  const handleClearCart = () => {
+    setCartItems([]);
+  };
 
   const handlePageChange = (pageIndex) => {
     console.log('page ', pageIndex);
@@ -31,22 +50,18 @@ const Showcase = () => {
     setCurrentCategory('');
   };
 
-  useEffect(() => {
-    console.log(`Category `, currentCategory);
-  }, [currentCategory]);
+  const handleCartAdd = (item) => {
+    //ПОЧЕМУ В setCartItems ПЕРЕДАЕМ ИМЕННО МАССИВ?
+    setCartItems([...cartItems, item]);
+    // console.log(cartItems);
+  };
 
-  // function filterItems(data) {
-  //   const filteredItems = searchValue
-  //     ? data.filter((item) => item.name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1)
-  //     : itemsList;
+  const itemsByCategory = searchValue
+    ? items.filter((item) => item.name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1)
+    : currentCategory
+    ? items.filter((item) => item.category === currentCategory)
+    : items;
 
-  //   return filteredItems;
-  // }
-  // const filteredItems = filterItems(itemsList);
-
-  const itemsByCategory = currentCategory
-    ? itemsList.filter((item) => item.category === currentCategory)
-    : itemsList;
   const itemsCrop = paginate(itemsByCategory, currentPage, pageSize);
 
   return (
@@ -67,9 +82,19 @@ const Showcase = () => {
         />
       </div>
       <h2>{!currentCategory ? 'Все товары' : `${currentCategory}`}</h2>
-      <Header handleChange={handleCategoryChange} handleClear={handleCategoryClear} />
+      <Cart
+        items={cartItems}
+        displayCart={handleDisplayCart}
+        display={displayCart}
+        clearCart={handleClearCart}
+      />
+      <Header
+        handleChange={handleCategoryChange}
+        handleClear={handleCategoryClear}
+        showCart={handleDisplayCart}
+      />
       <Login />
-      <Items items={itemsCrop} />
+      <Items items={itemsCrop} addItem={handleCartAdd} />
       <Pagination
         itemsCount={count}
         pageSize={pageSize}
