@@ -144,11 +144,75 @@
     "price": 5999
   },
   {
-    "id": "79143b3c568b4b79bfba0283181ff411",
+    "id": "2b314ad606ee41e59c120dfa2f58ef2c",
     "platform": "playstation",
     "category": "ps-games",
     "name": "Uncharted Collection",
     "image": "./images/ps5_games/uncharted.jpeg",
     "price": 5999
+  },
+  {
+    "id": "79143b3c568b4b79bfba0283181ff411",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Контроллер Dualsense (White)",
+    "image": "./images/ps5_accesories/dualsense_white.jpeg",
+    "price": 5999
+  },
+  {
+    "id": "ab104cb751a045eb92494fdfb1b247ef",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Контроллер Dualsense (Black)",
+    "image": "./images/ps5_accesories/dualsense_black.jpeg",
+    "price": 5999
+  },
+  {
+    "id": "500dfd6a02e34f3dafabca47fe888c60",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Контроллер Dualsense (Red)",
+    "image": "./images/ps5_accesories/dualsense_red.jpeg",
+    "price": 5999
+  },
+  {
+    "id": "3fa5170feb93444699218c56c935d481",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Контроллер Dualsense (Blue)",
+    "image": "./images/ps5_accesories/dualsense_blue.jpeg",
+    "price": 5999
+  },
+  {
+    "id": "ae658f4d77004e0c8dbd2066aecb16af",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Контроллер Dualsense Edge",
+    "image": "./images/ps5_accesories/duelsence_edge.jpeg",
+    "price": 9999
+  },
+  {
+    "id": "702d871e5c2c4fb18d0c681de94fc846",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Зарядная станция для контроллеров Dualsense",
+    "image": "./images/ps5_accesories/charge_station.jpeg",
+    "price": 2999
+  },
+  {
+    "id": "420cc71345a949269d4543fc6d1a4a27",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Гарнитура sony - Inzone",
+    "image": "./images/ps5_accesories/headphones_inzone.jpeg",
+    "price": 9999
+  },
+  {
+    "id": "d4c9cf791f3f472e82a7ad1cd19c796a",
+    "platform": "playstation",
+    "category": "ps5-accessories",
+    "name": "Гарнитура Sony - Pulse",
+    "image": "./images/ps5_accesories/headphones_pulse.jpeg",
+    "price": 12999
   }
 ]

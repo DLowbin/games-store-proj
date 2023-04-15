@@ -8,7 +8,7 @@ const Pagination = ({ itemsCount, pageSize, onPageChange, currentPage }) => {
 
   return (
     <nav>
-      <ul className="pagination">
+      <ul className="pagination justify-content-center">
         {pages.map((page) => (
           <li
             className={'page-item' + (currentPage === page ? ' active' : '')}

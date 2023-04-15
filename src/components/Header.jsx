@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header({ handleChange, handleClear, showCart }) {
+function Header({ handleChange, handleClear, showCart, items, isUser }) {
   return (
     <header className="header">
       {/* <a href="#" className="header__logo"></a> */}
@@ -44,9 +45,9 @@ function Header({ handleChange, handleClear, showCart }) {
         </li>
         <li className="header__item">
           <div className="header__button">
-            <a name="all-items" onClick={showCart}>
-              Корзина
-            </a>
+            <Link to={isUser ? '' : '/login'} onClick={isUser ? showCart : undefined}>
+              {isUser ? (items.length > 0 ? `(${items.length}) Корзина` : 'Корзина') : 'Войти'}
+            </Link>
           </div>
         </li>
       </ul>

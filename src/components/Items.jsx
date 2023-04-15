@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Items({ items, addItem }) {
+function Items({ items, addItem, isUser }) {
   return (
     <div className="container">
       {items.map((item) => (
@@ -16,7 +17,7 @@ function Items({ items, addItem }) {
                 // console.log(item);
               }}
             >
-              Purchase
+              {isUser ? 'В корзину' : <Link to={'/login'}>Регистрация</Link>}
             </a>
           </div>
         </div>

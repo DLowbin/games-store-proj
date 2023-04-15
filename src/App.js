@@ -1,19 +1,18 @@
-import Cart from './components/Cart';
-// import Header from './components/Header';
-
 import Showcase from './components/Showcase';
+import { Route } from 'react-router-dom';
+import Login from './components/loginForm';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <>
-      {/* <Header /> */}
-      <Showcase />
-      {/* <Cart /> */}
-
-      <div className="App">
-        <h1>Project</h1>
-      </div>
-    </>
+    // <div className="main">
+    <div className="wrapper">
+      <Route path="/login" component={Login} />
+      <Route path="/" exact={true} component={Showcase} />
+      <Footer />
+      {/* <Showcase /> */}
+    </div>
+    // </div>
   );
 }
 
