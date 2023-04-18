@@ -64,12 +64,12 @@ code {
   color: #fff;
 }
 
-.form__search-icon {
-  display: inline-block;
-  background-image: url(../public/images/icons8-search-50.svg);
-  height: 20px;
-  width: 20px;
-}
+// .form__search-icon {
+//   display: inline-block;
+//   background-image: url(../public/images/icons8-search-50.svg);
+//   height: 20px;
+//   width: 20px;
+// }
 
 .form__input {
   width: 100%;
@@ -261,6 +261,9 @@ code {
 
 .cart {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 35%;
   height: 100%;
   right: 0;
@@ -274,10 +277,18 @@ code {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  overflow-y: scroll;
 }
 
 .cart__content {
+  margin-bottom: 15px;
+  overflow-y: scroll;
+}
+
+.cart__content::-webkit-scrollbar {
+  display: none;
+}
+
+.cart__item {
   position: relative;
   display: flex;
   align-items: center;
@@ -295,18 +306,42 @@ code {
 }
 
 .trash_img {
-  fill: #fff;
-  display: block;
   height: 25px;
   padding-right: 5px;
-  padding-left: 5px;
-  cursor: pointer;
+  background-image: url(../images/trash-can-solid.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border: none;
+  background-color: transparent;
 }
-.home_img {
-  display: block;
-  height: 40px;
-  padding-right: 5px;
-  padding-left: 5px;
+
+.quantity__block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button__counter {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.minus {
+  background-image: url(../images/minus-solid.svg);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.plus {
+  background-image: url(../images/plus-solid.svg);
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .box {

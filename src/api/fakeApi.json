@@ -4,7 +4,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Assasin's Creed Valhalla",
-    "image": "./images/ps5_games/assasins_creed_valhalla.jpg",
+    "image": "assasins_creed_valhalla.jpg",
     "price": 5999
   },
   {
@@ -12,7 +12,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "The Avengers",
-    "image": "./images/ps5_games/avengers.jpg",
+    "image": "avengers.jpg",
     "price": 5999
   },
   {
@@ -20,7 +20,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Death Stranding",
-    "image": "./images/ps5_games/death_stranding.jpeg",
+    "image": "death_stranding.jpeg",
     "price": 5999
   },
   {
@@ -28,7 +28,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Demon Souls",
-    "image": "./images/ps5_games/demon_souls.jpeg",
+    "image": "demon_souls.jpeg",
     "price": 5999
   },
   {
@@ -36,7 +36,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Elden Ring",
-    "image": "./images/ps5_games/elden_ring.jpg",
+    "image": "elden_ring.jpg",
     "price": 5999
   },
   {
@@ -44,23 +44,23 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Far Cry 6",
-    "image": "./images/ps5_games/far_cry_6.jpg",
+    "image": "far_cry_6.jpg",
     "price": 5999
   },
   {
     "id": "b3989df2da2043eab2263ef62377939d",
     "platform": "playstation",
-    "category": "games",
+    "category": "ps-games",
     "name": "Ghost of Tsushima",
-    "image": "./images/ps5_games/ghost_of_tsushima.jpeg",
+    "image": "ghost_of_tsushima.jpeg",
     "price": 5999
   },
   {
     "id": "faee1b039e354c26922aad88c2d02b9c",
     "platform": "playstation",
-    "category": "games",
+    "category": "ps-games",
     "name": "God of War Ragnarok",
-    "image": "./images/ps5_games/god_of_war.jpeg",
+    "image": "god_of_war.jpeg",
     "price": 5999
   },
   {
@@ -68,7 +68,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Gran Turismo 7",
-    "image": "./images/ps5_games/gran_turismo.jpeg",
+    "image": "gran_turismo.jpeg",
     "price": 5999
   },
   {
@@ -76,7 +76,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Hitman",
-    "image": "./images/ps5_games/hitman.jpg",
+    "image": "hitman.jpg",
     "price": 5999
   },
   {
@@ -84,7 +84,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Hogearts Legacy",
-    "image": "./images/ps5_games/hogwarts_legacy.jpg",
+    "image": "hogwarts_legacy.jpg",
     "price": 5999
   },
   {
@@ -92,7 +92,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Mortal Kombat 11",
-    "image": "./images/ps5_games/mortal_combat.jpg",
+    "image": "mortal_combat.jpg",
     "price": 5999
   },
   {
@@ -100,7 +100,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Ratchet and Clank",
-    "image": "./images/ps5_games/ratchet_and_clank.png",
+    "image": "ratchet_and_clank.png",
     "price": 5999
   },
   {
@@ -108,7 +108,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Resident evil Village",
-    "image": "./images/ps5_games/re_village.jpg",
+    "image": "re_village.jpg",
     "price": 5999
   },
   {
@@ -116,7 +116,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Returnal",
-    "image": "./images/ps5_games/returnal.jpeg",
+    "image": "returnal.jpeg",
     "price": 5999
   },
   {
@@ -124,7 +124,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Spider man. Miles Morales",
-    "image": "./images/ps5_games/spider_man_miles.jpeg",
+    "image": "spider_man_miles.jpeg",
     "price": 5999
   },
   {
@@ -132,7 +132,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "The Last of Us part two",
-    "image": "./images/ps5_games/the_last_of_us_2.jpeg",
+    "image": "the_last_of_us_2.jpeg",
     "price": 5999
   },
   {
@@ -140,7 +140,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "The Last of Us",
-    "image": "./images/ps5_games/the_last_of_us.jpeg",
+    "image": "the_last_of_us.jpeg",
     "price": 5999
   },
   {
@@ -148,7 +148,7 @@
     "platform": "playstation",
     "category": "ps-games",
     "name": "Uncharted Collection",
-    "image": "./images/ps5_games/uncharted.jpeg",
+    "image": "uncharted.jpeg",
     "price": 5999
   },
   {
@@ -156,7 +156,7 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Контроллер Dualsense (White)",
-    "image": "./images/ps5_accesories/dualsense_white.jpeg",
+    "image": "dualsense_white.jpeg",
     "price": 5999
   },
   {
@@ -164,7 +164,7 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Контроллер Dualsense (Black)",
-    "image": "./images/ps5_accesories/dualsense_black.jpeg",
+    "image": "dualsense_black.jpeg",
     "price": 5999
   },
   {
@@ -172,7 +172,7 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Контроллер Dualsense (Red)",
-    "image": "./images/ps5_accesories/dualsense_red.jpeg",
+    "image": "dualsense_red.jpeg",
     "price": 5999
   },
   {
@@ -180,7 +180,7 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Контроллер Dualsense (Blue)",
-    "image": "./images/ps5_accesories/dualsense_blue.jpeg",
+    "image": "dualsense_blue.jpeg",
     "price": 5999
   },
   {
@@ -188,7 +188,7 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Контроллер Dualsense Edge",
-    "image": "./images/ps5_accesories/duelsence_edge.jpeg",
+    "image": "dualsence_edge.jpeg",
     "price": 9999
   },
   {
@@ -196,7 +196,7 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Зарядная станция для контроллеров Dualsense",
-    "image": "./images/ps5_accesories/charge_station.jpeg",
+    "image": "charge_station.jpeg",
     "price": 2999
   },
   {
@@ -204,7 +204,7 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Гарнитура sony - Inzone",
-    "image": "./images/ps5_accesories/headphones_inzone.jpeg",
+    "image": "headphones_inzone.jpeg",
     "price": 9999
   },
   {
@@ -212,7 +212,111 @@
     "platform": "playstation",
     "category": "ps5-accessories",
     "name": "Гарнитура Sony - Pulse",
-    "image": "./images/ps5_accesories/headphones_pulse.jpeg",
+    "image": "headphones_pulse.jpeg",
     "price": 12999
+  },
+  {
+    "id": "e8d1cace6000416f910244dc78b6cf25",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Atomic Heart",
+    "image": "atomic_heart.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "459f311262fd496a84575037092decb8",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Biomutant",
+    "image": "biomutant.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "41dc96bf2404422dbc41236f920a0758",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "The Callisto protocol",
+    "image": "callisto_protocol.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "79fe94cfa57c4f56b3553f87eb68e2b7",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Cyberpunk 2077",
+    "image": "cyberpunk.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "466d12d9e6554771abd090fb2b01a6ac",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Dead space remake",
+    "image": "dead_space.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "683713ff7eb24e5787ed3f999936a512",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Diablo 3",
+    "image": "diablo_3.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "2309800667e64e66a18fa3bec65a10ac",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Dying light 2",
+    "image": "dying_light_2.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "78d070d4c0784db58c45c0e411ea0e7e",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Far cry 6",
+    "image": "far_cry_6.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "a6b190cf3b7042c484c98598dcf2cf02",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Fifa 23",
+    "image": "fifa_23.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "d8274cbfc6244d439989e8f4f373de77",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Hogwarts legacy",
+    "image": "hogwarts_legacy.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "140a259aaff84bfb823b79ce2114874b",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Nier Replicant",
+    "image": "nier_replicant.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "043e8c98a36a4e53aa1044b931b64a26",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "A plague tale requiem",
+    "image": "plague_tale_requiem.jpeg",
+    "price": 3999
+  },
+  {
+    "id": "50563ddb41b345809e3ff717da0d9e44",
+    "platform": "X-box",
+    "category": "xb-games",
+    "name": "Resident evil village",
+    "image": "resident_evil_village.jpeg",
+    "price": 3999
   }
 ]

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Counter from './itemsCounter';
+import Minus from '../images/minus-solid.svg';
 
 function Cart({ items, display, displayCart, clearCart, itemRemove, changeQuantity }) {
   let initialValue = 0;
@@ -14,30 +14,40 @@ function Cart({ items, display, displayCart, clearCart, itemRemove, changeQuanti
     display && (
       <div className="overlay">
         <div className="cart">
-          {items.map(
-            (item) =>
-              item.quantity > 0 && (
-                <div className="cart__content" key={item.id}>
-                  <img className="cart__img" src={item.image} alt="" />
-                  <span>{item.name}</span>
-                  {/* <button onClick={() => itemRemove(item.id)}> */}
-                  <img
-                    className="trash_img"
-                    src="../images/trash-can-solid.svg"
-                    onClick={() => itemRemove(item.id)}
-                  ></img>
-                  {/* </button> */}
-                  <span>{item.quantity} x</span>
-                  <p>{item.price}</p>
-                  {/* <Counter count={item.quantity} /> */}
-                  <button onClick={() => changeQuantity(item, '-')}>-</button>
-                  <button onClick={() => changeQuantity(item, '+')}>+</button>
-                </div>
-              )
-          )}
-          <button onClick={displayCart}>CLOSE</button>
-          <button onClick={clearCart}>CLEAR</button>
-          <h3>{`ИТОГО : ${totalSumm(items)} руб.`}</h3>
+          <div className="cart__content">
+            {items.map(
+              (item) =>
+                item.quantity > 0 && (
+                  <div className="cart__item" key={item.id}>
+                    <img
+                      className="cart__img"
+                      src={require(`../images/${item.category}/${item.image}`)}
+                      alt=""
+                    />
+                    <span>{item.name}</span>
+                    <button className="trash_img" onClick={() => itemRemove(item.id)}></button>
+                    <div className="quantity__block">
+                      <button
+                        className="button__counter plus"
+                        onClick={() => changeQuantity(item, '+')}
+                      ></button>
+                      <span>{item.quantity} x</span>
+                      <button
+                        className="button__counter minus"
+                        onClick={() => changeQuantity(item, '-')}
+                      ></button>
+                    </div>
+
+                    <p>{item.price}</p>
+                  </div>
+                )
+            )}
+          </div>
+          <div>
+            <button onClick={displayCart}>CLOSE</button>
+            <button onClick={clearCart}>CLEAR</button>
+            <h3>{`ИТОГО : ${totalSumm(items)} руб.`}</h3>
+          </div>
         </div>
       </div>
     )

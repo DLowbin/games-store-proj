@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import Items from './Items';
 import Pagination from './Pagination';
 import itemsList from '../api/fakeApi.json';

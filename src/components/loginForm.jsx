@@ -1,30 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TextField from './textField';
 import { Link } from 'react-router-dom';
 
 function Login() {
   const [data, setData] = useState({ username: '', password: '' });
-  //оплучаем event, а из него забираем target
+  const [errors, setErrors] = useState();
+  //получаем event, а из него забираем target
   const handleChange = ({ target }) => {
     setData((prevstate) => ({ ...prevstate, [target.name]: target.value }));
   };
+
+  const validate = () => {
+    const errors = {};
+    for (const fieldName in data) {
+      if (data[fieldName].trim() === '') {
+        errors[fieldName] = `${fieldName} обязательно дял заполнения`;
+      }
+    }
+    setErrors(errors);
+  };
+
+  useEffect(() => {
+    validate();
+  }, [data]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
+    validate();
+    if (Object.keys(errors).length !== 0) return;
+    console.log(data);
   };
   return (
     <div className="box">
-      {/* <li className="header__item"> */}
       <div className="header__button">
         <Link to={'/'}>
-          <img className="home_img" src="../images/playstation.svg" alt="" />
-          <img className="home_img" src="../images/xbox.svg" alt="" />
+          На главную <img className="home_img playstation" alt="" />
         </Link>
       </div>
-      {/* </li> */}
       <div className="box__container">
         <div className="box__form">
-          <h2>Login form</h2>
+          <h2>Вход</h2>
           <form onSubmit={handleSubmit}>
             <TextField
               placeholder="Имя пользователя"
@@ -41,7 +56,7 @@ function Login() {
               onChange={handleChange}
             />
             <div className="inputBox">
-              <input type="submit" value="Login" />
+              <input type="submit" value="Войти" />
             </div>
           </form>
         </div>
