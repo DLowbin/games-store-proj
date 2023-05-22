@@ -1,24 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import Items from './Items';
-import Pagination from './Pagination';
-import itemsList from '../api/fakeApi.json';
+import Pagination from './pagination';
 import { paginate } from '../utils/paginate';
-import Header from './Header';
-import Login from './loginForm';
-import Cart from './Cart';
+import Header from './header';
+import Cart from './cart';
 import Search from './searchForm';
 import Footer from './footer';
+import { useItems } from '../store';
+import { useCart } from '../store';
+import ItemCard from './itemCard';
 
 const Showcase = () => {
   const pageSize = 6;
-  const [items, setItems] = useState(itemsList);
-  const [cartItems, setCartItems] = useState([]);
+  // const [items, setItems] = useState(itemsList);
+  const items = useItems((state) => state.items);
+
+  // const [cartItems, setCartItems] = useState([]);
+  const cartItems = useCart((state) => state.cartItems);
+
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
   const [currentCategory, setCurrentCategory] = useState('');
   const [displayCart, setDisplayCart] = useState(false);
-  const [totalPrice, setTotalprice] = useState(0);
+
   const [isUser, setIsUser] = useState(true);
 
   //-->временно
@@ -29,10 +34,6 @@ const Showcase = () => {
 
   const handleDisplayCart = () => {
     setDisplayCart((prevState) => !prevState);
-  };
-
-  const handleClearCart = () => {
-    setCartItems([]);
   };
 
   const handlePageChange = (pageIndex) => {
@@ -53,52 +54,19 @@ const Showcase = () => {
   const handleCategoryClear = () => {
     setCurrentCategory('');
     setSearchQuery('');
+    setCurrentPage(1);
   };
 
-  const checkDouble = (item) => {
-    return cartItems.find((cartItem) => cartItem.id === item.id);
-  };
+  // useEffect(() => {
+  //   cartClean();
+  // }, [cartItems]);
 
-  const handleCartAdd = (item) => {
-    if (checkDouble(item)) {
-      //почему не работает, если пытаться взять item.quantity, а не checkDouble(item) ?
-      let currentQuantity = checkDouble(item).quantity;
-      return setCartItems((prevState) =>
-        prevState.map((cartitem) =>
-          cartitem.id === item.id ? { ...cartitem, quantity: currentQuantity + 1 } : cartitem
-        )
-      );
-    }
-    //ПОЧЕМУ В setCartItems ПЕРЕДАЕМ ИМЕННО МАССИВ?
-    setCartItems((prevState) => [...prevState, { ...item, quantity: 1 }]);
-  };
-
-  const handleItemsQuantity = (item, action) => {
-    let currentQuantity = item.quantity;
-    setCartItems((prevState) =>
-      prevState.map((cartitem) =>
-        cartitem.id === item.id
-          ? { ...cartitem, quantity: action === '+' ? currentQuantity + 1 : currentQuantity - 1 }
-          : cartitem
-      )
-    );
-  };
-
-  useEffect(() => {
-    cartClean();
-  }, [cartItems]);
-
-  const cartClean = () => {
-    let emptyItem = cartItems.find((cartItem) => cartItem.quantity === 0);
-    if (emptyItem) {
-      handleCartRemove(emptyItem.id);
-    }
-  };
-
-  const handleCartRemove = (id) => {
-    const filteredCart = cartItems.filter((item) => item.id !== id);
-    setCartItems(filteredCart);
-  };
+  // const cartClean = () => {
+  //   let emptyItem = cartItems.find((cartItem) => cartItem.quantity === 0);
+  //   if (emptyItem) {
+  //     handleCartRemove(emptyItem.id);
+  //   }
+  // };
 
   const itemsByCategory = searchQuery
     ? items.filter((item) => item.name.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1)
@@ -110,14 +78,8 @@ const Showcase = () => {
   let count = itemsByCategory.length;
   return (
     <>
-      <Cart
-        items={cartItems}
-        displayCart={handleDisplayCart}
-        display={displayCart}
-        clearCart={handleClearCart}
-        itemRemove={handleCartRemove}
-        changeQuantity={handleItemsQuantity}
-      />
+      <Cart displayCart={handleDisplayCart} display={displayCart} />
+
       <Header
         handleChange={handleCategoryChange}
         handleClear={handleCategoryClear}
@@ -127,6 +89,7 @@ const Showcase = () => {
       />
       <button onClick={handleIsUser}>User/no user</button>
       <Search searchQuery={searchQuery} handleSearch={handleSearch} />
+      <ItemCard />
       <h2>
         {searchQuery
           ? `Результат поиска по запросу : ${searchQuery}`
@@ -134,7 +97,7 @@ const Showcase = () => {
           ? `${currentCategory.content}`
           : 'Все товары'}
       </h2>
-      <Items items={itemsCrop} addItem={handleCartAdd} isUser={isUser} />
+      <Items items={itemsCrop} isUser={isUser} />
       <Pagination
         itemsCount={count}
         pageSize={pageSize}

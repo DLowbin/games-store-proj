@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useCart } from '../store';
 
-function Header({ handleChange, handleClear, showCart, items, isUser }) {
+function Header({ handleChange, handleClear, showCart, isUser }) {
+  const items = useCart((state) => state.cartItems);
   return (
     <header className="header">
-      {/* <a href="#" className="header__logo"></a> */}
-
-      {/* <nav className="header__nav"> */}
       <ul className="header__list">
         <li className="header__item">
           <div className="header__button">
@@ -51,7 +50,6 @@ function Header({ handleChange, handleClear, showCart, items, isUser }) {
           </div>
         </li>
       </ul>
-      {/* </nav> */}
     </header>
   );
 }
