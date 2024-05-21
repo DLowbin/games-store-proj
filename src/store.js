@@ -1,17 +1,40 @@
 // import { nanoid } from 'nanoid';
-//почему не работает без деструктуризации?
-import { create } from 'zustand';
-import itemsList from './api/fakeApi.json';
 
-export const useItems = create((set) => ({
-  items: itemsList,
+import { create } from 'zustand';
+// import itemsList from './app/api/fakeApi.json';
+
+// export const useItems = create((set) => ({
+//   items: [],
+//   setItems: (items) =>
+//     set((state) => {
+//       return { items: [items] };
+//     }),
+// }));
+
+export const useIsUser = create((set) => ({
+  isUser: false,
+  setIsUser: () =>
+    set((state) => {
+      return { isUser: !state.isUser };
+    }),
+  isAdmin: false,
+  setIsAdmin: () =>
+    set((state) => {
+      return { isAdmin: !state.isAdmin };
+    }),
 }));
 
 export const useCart = create((set) => ({
   cartItems: [],
+  displayCart: false,
   addCartItem: (item) =>
     set((state) => {
+      localStorage.setItem('products', state.cartItems);
       return { cartItems: [...state.cartItems, { ...item, quantity: 1 }] };
+    }),
+  setDisplayCart: () =>
+    set((state) => {
+      return { displayCart: !state.displayCart };
     }),
   addDoubledItem: (items) =>
     set(() => {
@@ -25,7 +48,7 @@ export const useCart = create((set) => ({
           ? { ...cartitem, quantity: action === '+' ? currentQuantity + 1 : currentQuantity - 1 }
           : cartitem
       );
-      let emptyItem = filteredItems.find((cartItem) => cartItem.quantity === 0);
+      // let emptyItem = filteredItems.find((cartItem) => cartItem.quantity === 0);
       return { cartItems: filteredItems };
     }),
   removeCartItem: (id) =>

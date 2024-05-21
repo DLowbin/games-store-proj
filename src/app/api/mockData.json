@@ -1,0 +1,129 @@
+[
+  {
+    "id": "09f6021292da4946b175a17bfdd6e576",
+    "platform": "playstation",
+    "category": "d01dd088750b48b181a964e105addecc",
+    "name": "Assasin's Creed Valhalla",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fassasins_creed_valhalla.jpg?alt=media&token=383f7197-5ea3-4094-bcb4-a7476519d22c",
+    "price": 5999,
+    "discount": 0
+  },
+  {
+    "id": "02bda2771f6f4298a8e51579f9562244",
+    "platform": "playstation",
+    "category": "d01dd088750b48b181a964e105addecc",
+    "name": "The Avengers",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Favengers.jpg?alt=media&token=567ce4e1-8575-47d4-a730-360948ec8b40",
+    "price": 5999,
+    "discount": 0
+  },
+  {
+    "id": "388dd31d43e746bb8dfde4080b6aca20",
+    "platform": "playstation",
+    "category": "d01dd088750b48b181a964e105addecc",
+    "name": "Death Stranding",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdeath_stranding.jpeg?alt=media&token=03c493df-b202-4c20-b566-ebe76fe7a97e",
+    "price": 5999,
+    "discount": 0
+  },
+  {
+    "id": "bb6ce187a82242cc8ed157cffd5fe592",
+    "platform": "playstation",
+    "category": "d01dd088750b48b181a964e105addecc",
+    "name": "Demon Souls",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdemon_souls.jpeg?alt=media&token=5b585986-35bb-4261-8403-ad7d7c71af51",
+    "price": 5999,
+    "discount": 0
+  },
+  {
+    "id": "3a7c598533f8489abcb20802e82fab24",
+    "platform": "playstation",
+    "category": "d01dd088750b48b181a964e105addecc",
+    "name": "Elden Ring",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Felden_ring.jpg?alt=media&token=08615dcf-a91a-40dd-8cec-dd35b68ecefc",
+    "price": 5999,
+    "discount": 0
+  },
+
+  {
+    "id": "459f311262fd496a84575037092decb8",
+    "platform": "X-box",
+    "category": "5885ea46aa1b439c9124c71b38c95a72",
+    "name": "Biomutant",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fbiomutant.jpeg?alt=media&token=3446b5df-e09a-44f3-b6fc-25c0dd6fa19b",
+    "price": 3999,
+    "discount": 0
+  },
+  {
+    "id": "41dc96bf2404422dbc41236f920a0758",
+    "platform": "X-box",
+    "category": "5885ea46aa1b439c9124c71b38c95a72",
+    "name": "The Callisto protocol",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fcallisto_protocol.jpeg?alt=media&token=b7cda1da-3a01-4282-b25f-64080d777588",
+    "price": 3999,
+    "discount": 0
+  },
+  {
+    "id": "79fe94cfa57c4f56b3553f87eb68e2b7",
+    "platform": "X-box",
+    "category": "5885ea46aa1b439c9124c71b38c95a72",
+    "name": "Cyberpunk 2077",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fcyberpunk.jpeg?alt=media&token=79ec0fc4-ba01-46b0-aecf-5a1fae19b3d1",
+    "price": 3999,
+    "discount": 0
+  },
+  {
+    "id": "466d12d9e6554771abd090fb2b01a6ac",
+    "platform": "X-box",
+    "category": "5885ea46aa1b439c9124c71b38c95a72",
+    "name": "Dead space remake",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdead_space.jpeg?alt=media&token=d5b8278b-f6f0-4dd4-bcab-4d175d057bd5",
+    "price": 3999,
+    "discount": 0
+  },
+  {
+    "id": "683713ff7eb24e5787ed3f999936a512",
+    "platform": "X-box",
+    "category": "5885ea46aa1b439c9124c71b38c95a72",
+    "name": "Diablo 3",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdiablo_3.jpeg?alt=media&token=8ba98ca1-ccd4-4495-a6e8-f1bd9aca92c4",
+    "price": 3999,
+    "discount": 0
+  },
+  {
+    "id": "79143b3c568b4b79bfba0283181ff411",
+    "platform": "playstation",
+    "category": "16fdf6ccf7184f35abf47f931d5b6",
+    "name": "Контроллер Dualsense (White)",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_white.jpeg?alt=media&token=044f04ee-b92e-4849-8a45-3a321f59bdfe",
+    "price": 5999,
+    "discount": 0
+  },
+  {
+    "id": "ab104cb751a045eb92494fdfb1b247ef",
+    "platform": "playstation",
+    "category": "16fdf6ccf7184f35abf47f931d5b6",
+    "name": "Контроллер Dualsense (Black)",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_black.jpeg?alt=media&token=2f4285d6-4232-4048-a52b-c521ebdda439",
+    "price": 5999,
+    "discount": 0
+  },
+  {
+    "id": "500dfd6a02e34f3dafabca47fe888c60",
+    "platform": "playstation",
+    "category": "16fdf6ccf7184f35abf47f931d5b6",
+    "name": "Контроллер Dualsense (Red)",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_red.jpeg?alt=media&token=cf445354-33f3-46bc-95b8-ceff80585278",
+    "price": 5999,
+    "discount": 0
+  },
+  {
+    "id": "3fa5170feb93444699218c56c935d481",
+    "platform": "playstation",
+    "category": "16fdf6ccf7184f35abf47f931d5b6",
+    "name": "Контроллер Dualsense (Blue)",
+    "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_blue.jpeg?alt=media&token=8f5a598b-b8a1-4040-af3d-160b5c9c3adf",
+    "price": 5999,
+    "discount": 0
+  }
+]

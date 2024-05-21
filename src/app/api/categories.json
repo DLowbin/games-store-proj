@@ -1,0 +1,42 @@
+[
+  {
+    "order": 2,
+    "id": "d01dd088750b48b181a964e105addecc",
+    "name": "psgames",
+    "rus": "Игры PS5",
+    "icon": "fa-brands fa-playstation",
+    "color": "#1129c2"
+  },
+  {
+    "order": 3,
+    "id": "5885ea46aa1b439c9124c71b38c95a72",
+    "name": "xbgames",
+    "rus": "Игры Xbox",
+    "icon": "fa-brands fa-xbox",
+    "color": "#32a852"
+  },
+  {
+    "order": 4,
+    "id": "16fdf6ccf7184f35abf47f931d5b6",
+    "name": "psaccesories",
+    "rus": "Аксессуары PS5",
+    "icon": "fa-solid fa-gamepad",
+    "color": "#c2114f"
+  },
+  {
+    "order": 5,
+    "id": "fcd48188bab74f3da2259a889bfb697b",
+    "name": "xbaccesories",
+    "rus": "Аксессуары Xbox",
+    "icon": "fa-brands fa-xbox",
+    "color": "#c2b911"
+  },
+  {
+    "order": 1,
+    "id": "edbd1a337fbc4e4aa8a5f3be507b2661",
+    "name": "all",
+    "rus": "Все товары",
+    "icon": "fa-solid fa-shop",
+    "color": "#0fb7d1"
+  }
+]

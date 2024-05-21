@@ -1,0 +1,140 @@
+.header {
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  position: sticky;
+}
+
+.header__logo {
+  display: block;
+  height: 20px;
+  background-image: url(https://wallpaperaccess.com/full/7762898.jpg);
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  padding: 0;
+}
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__button {
+  width: 80%;
+  height: 80px;
+  margin: 50px;
+  position: relative;
+  color: #fff;
+  font-size: xx-large;
+}
+.header__button a {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 400;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.3s;
+  backdrop-filter: blur(15px);
+}
+
+.header__button:hover a {
+  color: #fff;
+}
+
+.header__button a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translatex(0);
+  transition: 0.3s;
+}
+
+.header__button:hover a::before {
+  transform: skewX(45deg) translatex(200%);
+}
+
+.header__button::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 300px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.3s;
+  transition-delay: 0s;
+}
+
+.header__button:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.1s;
+  transition: 0.3s;
+}
+
+.header__button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width: 300px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.3s;
+  transition-delay: 0.1s;
+}
+
+.header__button:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0s;
+}
+
+.header__button::before,
+.header__button::after {
+  background: #1f3dff;
+  box-shadow: 0 0 5px #1f3dff, 0 0 15px #1f3dff, 0 0 30px #1f3dff, 0 0 60px #1f3dff;
+}
+
+.header__button:nth-child(2)::before,
+.header__button:nth-child(2)::after {
+  background: #2bd2ff;
+  box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff, 0 0 60px #2bd2ff;
+}
+
+.xbox::before,
+.xbox::after {
+  background: #1eff45;
+  box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45, 0 0 60px #1eff45;
+}

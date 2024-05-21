@@ -1,0 +1,178 @@
+.cat_pan-button {
+  width: 80%;
+  height: 80px;
+  margin: 50px;
+  position: relative;
+  color: #fff;
+  font-size: xx-large;
+  transition: 0.2s;
+}
+
+.cat_pan-button.search {
+  height: 0px;
+  width: 0;
+  margin-top: 5px;
+  font-size: large;
+}
+.cat_pan-button.search.active {
+  height: 40px;
+  width: 80%;
+}
+
+.cat_pan-button span {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 400;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.3s;
+  backdrop-filter: blur(15px);
+}
+
+// .cat_pan-button:hover a {
+//   color: #fff;
+// }
+
+.cat_pan-button span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translatex(0);
+  transition: 0.3s;
+}
+
+.cat_pan-button:hover span::before {
+  transform: skewX(45deg) translatex(200%);
+}
+
+.cat_pan-button::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 70%;
+  height: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  // transition-delay: 0.1s;
+}
+
+// .cat_pan-button:hover::before {
+//   bottom: 0;
+//   height: 50%;
+//   width: 80%;
+//   border-radius: 30px;
+//   transition-delay: 0.1s;
+//   transition: 0.3s;
+// }
+
+.cat_pan-button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width: 70%;
+  height: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  // transition-delay: 0.1s;
+}
+
+// .cat_pan-button:hover::after {
+//   top: 0;
+//   height: 50%;
+//   width: 80%;
+//   border-radius: 30px;
+//   transition-delay: 0s;
+// }
+
+.cat_pan-button::before,
+.cat_pan-button::after {
+  background: var(--bg);
+  // opacity: 0;
+  box-shadow: 0 0 5px var(--bg), 0 0 15px var(--bg), 0 0 30px var(--bg), 0 0 60px var(--bg);
+
+  animation-name: neon-animate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+@keyframes neon-animate {
+  from {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  52% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

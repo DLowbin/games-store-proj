@@ -1,0 +1,50 @@
+.loader {
+  color: #1129c2;
+  // height: 190px;
+  // width: 190px;
+
+  font-size: 70px;
+  padding: 10px;
+}
+
+@keyframes rotationCycle {
+  0% {
+    transform: rotate(-90deg) scale(0);
+  }
+  40% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(90deg) scale(0);
+  }
+}
+
+.loader {
+  animation-name: rotationCycle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.loader:nth-child(2) {
+  font-size: 100px;
+}
+
+.loader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .circle::after {
+//   content: '';
+//   position: relative;
+//   width: 30px;
+//   height: 3px;
+//   background: red;
+//   top: 10px;
+// left: 9000px;
+// }
