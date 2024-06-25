@@ -72,17 +72,7 @@
   height: 10px;
   border-radius: 10px;
   transition: 0.3s;
-  // transition-delay: 0.1s;
 }
-
-// .cat_pan-button:hover::before {
-//   bottom: 0;
-//   height: 50%;
-//   width: 80%;
-//   border-radius: 30px;
-//   transition-delay: 0.1s;
-//   transition: 0.3s;
-// }
 
 .cat_pan-button::after {
   content: '';
@@ -94,17 +84,7 @@
   height: 10px;
   border-radius: 10px;
   transition: 0.3s;
-
-  // transition-delay: 0.1s;
 }
-
-// .cat_pan-button:hover::after {
-//   top: 0;
-//   height: 50%;
-//   width: 80%;
-//   border-radius: 30px;
-//   transition-delay: 0s;
-// }
 
 .cat_pan-button::before,
 .cat_pan-button::after {

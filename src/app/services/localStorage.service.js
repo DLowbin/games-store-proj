@@ -2,6 +2,7 @@ const TOKEN_KEY = 'jwt-token';
 const REFRESH_KEY = 'jwt-refresh-token';
 const EXPIRES_KEY = 'jwt-expires';
 const USERID_KEY = 'user-local-id';
+const USER_CART_KEY = 'games-store-cart';
 
 // ---> localId(id новосозданного пользователя) возвращается в payload после выполнения signUp
 
@@ -11,6 +12,10 @@ export function setTokens({ refreshToken, idToken, expiresIn = 3600, localId }) 
   localStorage.setItem(TOKEN_KEY, idToken);
   localStorage.setItem(REFRESH_KEY, refreshToken);
   localStorage.setItem(EXPIRES_KEY, expiresDate);
+}
+
+export function setCartItems(payload) {
+  return localStorage.setItem(USER_CART_KEY, payload);
 }
 
 export function getAccessToken() {

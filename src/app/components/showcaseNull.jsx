@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Items from './Items';
-import Pagination from './pagination';
+// import Pagination from './pagination';
 import { paginate } from '../utils/paginate';
 import Header from './header';
 import Cart from './cart';
-import Search from './searchForm';
+// import Search from './searchForm';
 import Footer from './footer';
-import { useItems } from '../../store';
+// import { useItems } from '../../store';
 import { useCart } from '../../store';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import productsService from '../services/products.service';
-import { faHourglass1 } from '@fortawesome/free-solid-svg-icons';
 import Loader from './loader';
 
 const Showcase = () => {
@@ -57,9 +56,9 @@ const Showcase = () => {
     setDisplayCart((prevState) => !prevState);
   };
 
-  const handlePageChange = (pageIndex) => {
-    setCurrentPage(pageIndex);
-  };
+  // const handlePageChange = (pageIndex) => {
+  //   setCurrentPage(pageIndex);
+  // };
 
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
@@ -95,7 +94,7 @@ const Showcase = () => {
     : items;
 
   const itemsCrop = paginate(itemsByCategory, currentPage, pageSize);
-  let count = itemsByCategory.length;
+  // let count = itemsByCategory.length;
   return (
     <>
       <Cart displayCart={handleDisplayCart} display={displayCart} />

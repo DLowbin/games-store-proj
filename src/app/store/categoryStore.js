@@ -9,8 +9,17 @@ export const useCurrentCat = create((set) => ({
     icon: 'fa-solid fa-shop',
     color: '#0fb7d1',
   },
+  categories: [],
   setItems: (current) =>
     set((state) => {
       return { category: current };
+    }),
+}));
+
+export const useStateCategories = create((set) => ({
+  categories: [],
+  setCategories: (cat) =>
+    set(() => {
+      return { categories: cat };
     }),
 }));

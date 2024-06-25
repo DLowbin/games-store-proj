@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useCart } from '../../store';
 import Product from './product';
-import Loader from './loader';
+import Loader from './common/loader';
 
 function Items({ items, isUser }) {
   const addItem = useCart((state) => state.addCartItem);
+
   const cartItems = useCart((state) => state.cartItems);
   const addDoubledItem = useCart((state) => state.addDoubledItem);
 
   const checkDouble = (item) => {
     return cartItems.length > 0 && cartItems.find((cartItem) => cartItem.id === item.id);
   };
+
+  useEffect(() => {
+    localStorage.setItem('games-store-cart', JSON.stringify(cartItems.map((el) => el.id)));
+  }, [cartItems]);
 
   const handleAddToCart = (item) => {
     if (checkDouble(item)) {
@@ -20,7 +25,7 @@ function Items({ items, isUser }) {
       );
       return addDoubledItem(newCartItems);
     }
-    return addItem(item);
+    addItem(item);
   };
 
   return (

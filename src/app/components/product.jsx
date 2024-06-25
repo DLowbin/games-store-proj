@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import { useIsUser } from '../../store';
 import { useAuth } from '../hooks/useAuth';
-import Loader from './loader';
+import Loader from './common/loader';
+import PricesBlock from './pricesBlock';
+import { initial } from 'lodash';
 
 const Product = ({ items, handleAddToCart, isLoading }) => {
-  // const isAdmin = useIsUser((state) => state.isAdmin);
   const { currentUser } = useAuth();
   console.log(currentUser);
 
@@ -20,6 +20,7 @@ const Product = ({ items, handleAddToCart, isLoading }) => {
   //   } catch (error) {}
   // }
 
+  <></>;
   return !isLoading ? (
     items.map((item) => (
       <div className="card" key={item.id}>
@@ -36,7 +37,13 @@ const Product = ({ items, handleAddToCart, isLoading }) => {
           </div>
 
           <span>{item.name}</span>
-          <p>{item.price}</p>
+          <div className="product-price-block">
+            {item.discount ? (
+              <PricesBlock initialprice={item.initialprice} discountprice={item.discountprice} />
+            ) : (
+              item.initialprice
+            )}
+          </div>
           <div className="button__box">
             <div
               role="button"

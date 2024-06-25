@@ -18,6 +18,10 @@
 //   font-family: 'Nunito Sans', sans-serif;
 //   // min-height: 100vh;
 // }
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
 
 .wrapper {
   display: flex;
@@ -261,6 +265,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
+  cursor: pointer;
 }
 
 .pagination__link {

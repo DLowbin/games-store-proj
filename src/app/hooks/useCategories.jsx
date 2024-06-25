@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
-import productsService from '../services/products.service';
 import { categoriesService } from '../services/products.service';
+import { useStateCategories } from '../store/categoryStore';
 
 const CategoriesContext = React.createContext();
 
@@ -11,6 +11,7 @@ export const useCategories = () => {
 const CategoriesProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const setStateCategories = useStateCategories((state) => state.setCategories);
   useEffect(() => {
     getCat();
   }, []);
@@ -18,9 +19,10 @@ const CategoriesProvider = ({ children }) => {
   async function getCat() {
     try {
       const { content } = await categoriesService.get();
+      setStateCategories(content);
       setCategories(content);
       setIsLoading(false);
-      console.log(content);
+      // console.log(content);
     } catch (error) {}
   }
   return (

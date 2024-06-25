@@ -2,6 +2,7 @@ import httpService from './http.service';
 
 const productsEndpoint = 'products/';
 const categoriesEndpoint = 'categories/';
+const ordersEndpoint = 'orders/';
 
 const productsService = {
   get: async () => {

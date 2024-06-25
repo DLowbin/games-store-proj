@@ -5,7 +5,8 @@
     "category": "d01dd088750b48b181a964e105addecc",
     "name": "Assasin's Creed Valhalla",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fassasins_creed_valhalla.jpg?alt=media&token=383f7197-5ea3-4094-bcb4-a7476519d22c",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -14,7 +15,8 @@
     "category": "d01dd088750b48b181a964e105addecc",
     "name": "The Avengers",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Favengers.jpg?alt=media&token=567ce4e1-8575-47d4-a730-360948ec8b40",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -23,7 +25,8 @@
     "category": "d01dd088750b48b181a964e105addecc",
     "name": "Death Stranding",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdeath_stranding.jpeg?alt=media&token=03c493df-b202-4c20-b566-ebe76fe7a97e",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -41,7 +44,8 @@
     "category": "d01dd088750b48b181a964e105addecc",
     "name": "Elden Ring",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Felden_ring.jpg?alt=media&token=08615dcf-a91a-40dd-8cec-dd35b68ecefc",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
 
@@ -51,7 +55,8 @@
     "category": "5885ea46aa1b439c9124c71b38c95a72",
     "name": "Biomutant",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fbiomutant.jpeg?alt=media&token=3446b5df-e09a-44f3-b6fc-25c0dd6fa19b",
-    "price": 3999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -60,7 +65,8 @@
     "category": "5885ea46aa1b439c9124c71b38c95a72",
     "name": "The Callisto protocol",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fcallisto_protocol.jpeg?alt=media&token=b7cda1da-3a01-4282-b25f-64080d777588",
-    "price": 3999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -69,7 +75,8 @@
     "category": "5885ea46aa1b439c9124c71b38c95a72",
     "name": "Cyberpunk 2077",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fcyberpunk.jpeg?alt=media&token=79ec0fc4-ba01-46b0-aecf-5a1fae19b3d1",
-    "price": 3999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -78,7 +85,8 @@
     "category": "5885ea46aa1b439c9124c71b38c95a72",
     "name": "Dead space remake",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdead_space.jpeg?alt=media&token=d5b8278b-f6f0-4dd4-bcab-4d175d057bd5",
-    "price": 3999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -87,7 +95,8 @@
     "category": "5885ea46aa1b439c9124c71b38c95a72",
     "name": "Diablo 3",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdiablo_3.jpeg?alt=media&token=8ba98ca1-ccd4-4495-a6e8-f1bd9aca92c4",
-    "price": 3999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -96,7 +105,8 @@
     "category": "16fdf6ccf7184f35abf47f931d5b6",
     "name": "Контроллер Dualsense (White)",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_white.jpeg?alt=media&token=044f04ee-b92e-4849-8a45-3a321f59bdfe",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -105,7 +115,8 @@
     "category": "16fdf6ccf7184f35abf47f931d5b6",
     "name": "Контроллер Dualsense (Black)",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_black.jpeg?alt=media&token=2f4285d6-4232-4048-a52b-c521ebdda439",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -114,7 +125,8 @@
     "category": "16fdf6ccf7184f35abf47f931d5b6",
     "name": "Контроллер Dualsense (Red)",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_red.jpeg?alt=media&token=cf445354-33f3-46bc-95b8-ceff80585278",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   },
   {
@@ -123,7 +135,8 @@
     "category": "16fdf6ccf7184f35abf47f931d5b6",
     "name": "Контроллер Dualsense (Blue)",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdualsense_blue.jpeg?alt=media&token=8f5a598b-b8a1-4040-af3d-160b5c9c3adf",
-    "price": 5999,
+    "initialprice": 5999,
+    "discountprice": 0,
     "discount": 0
   }
 ]

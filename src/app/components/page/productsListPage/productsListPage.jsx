@@ -1,32 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { useProducts } from '../../../hooks/useProducts';
+import React, { useState, useEffect, useRef } from 'react';
 import { paginate } from '../../../utils/paginate';
-import Pagination from '../../pagination';
+import Pagination from '../../common/pagination';
 import Items from '../../Items';
-import Cart from '../../cart';
+import Cart from '../../common/cart/cart';
 import { useCurrentCat } from '../../../store/categoryStore';
-import { useIsUser } from '../../../../store';
-import Loader from '../../loader';
 import { useItems, useSearch } from '../../../store/productsStore';
 
 const ProductsListPage = () => {
+  const divBlock = useRef(null);
   const pageSize = 6;
   // const { products } = useProducts();
 
   const currentProducts = useItems((state) => state.items);
-  const setCurItems = useItems((state) => state.setItems);
-
-  console.log(currentProducts);
-
+  // const setCurItems = useItems((state) => state.setItems);
   const [currentPage, setCurrentPage] = useState(1);
 
   const [currentCategory, setCurrentCategory] = useState('');
 
-  const [isLoading, setIsLoading] = useState(true);
-  const setIsAdmin = useIsUser((state) => state.setIsAdmin);
+  // const [isLoading, setIsLoading] = useState(true);
   const currentCat = useCurrentCat((state) => state.category);
   const searchQuery = useSearch((state) => state.searchQuery);
-  const setSearchQuery = useSearch((state) => state.setQuery);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -36,26 +29,22 @@ const ProductsListPage = () => {
     setCurrentPage(pageIndex);
   };
 
-  const handleSearch = (event) => {
-    setCurrentCategory(undefined);
-    setSearchQuery(event.target.value);
-  };
+  // const handleSearch = (event) => {
+  //   setCurrentCategory(undefined);
+  //   setSearchQuery(event.target.value);
+  // };
 
-  const handleCategoryChange = (event) => {
-    setCurrentCategory({ name: event.target.name, content: event.target.textContent });
-    setCurrentPage(1);
-    setSearchQuery('');
-  };
+  // const handleCategoryChange = (event) => {
+  //   setCurrentCategory({ name: event.target.name, content: event.target.textContent });
+  //   setCurrentPage(1);
+  //   setSearchQuery('');
+  // };
 
-  const handleCategoryClear = () => {
-    setCurrentCategory('');
-    setSearchQuery('');
-    setCurrentPage(1);
-  };
-
-  const handleIsAdmin = () => {
-    setIsAdmin();
-  };
+  // const handleCategoryClear = () => {
+  //   setCurrentCategory('');
+  //   setSearchQuery('');
+  //   setCurrentPage(1);
+  // };
 
   if (currentProducts) {
     const itemsByCategory = searchQuery
@@ -79,7 +68,7 @@ const ProductsListPage = () => {
 
     return (
       <>
-        <div className="box">
+        <div ref={divBlock} className="box">
           <Cart />
           {/* <Header
             // handleChange={handleCategoryChange}
@@ -94,6 +83,7 @@ const ProductsListPage = () => {
           <div style={{ '--bg': ` ${currentCat.color}` }} className="cat_pan-button">
             <span>{currentCat.rus}</span>
           </div>
+          {/* <button onClick={showDivWidth}>DIV WIDTH</button> */}
           <div
             style={{ '--bg': ` ${currentCat.color}` }}
             className={'cat_pan-button search' + (searchQuery ? ' active' : '')}>

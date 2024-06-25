@@ -9,6 +9,8 @@ import '../src/app/styles/editProduct.scss';
 import '../src/app/styles/categoryPannel.scss';
 import '../src/app/styles/signUp.scss';
 import '../src/app/styles/table.scss';
+import '../src/app/styles/loginForm.scss';
+import '../src/app/styles/adminPannel.scss';
 import './normalize.min.scss';
 
 // import '../src/app/styles/tabs.scss';

@@ -1,0 +1,113 @@
+// // :root {
+// //   --clr: rgba(2, 0, 0.6, 1);
+// // }
+// // background-color: var(--bg);
+// .orders-box,
+// .product-box {
+//   position: relative;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: row;
+//   flex-grow: 0;
+//   padding: 25px;
+// }
+
+// .admin-content-table {
+//   width: 100%;
+//   // border-collapse: collapse;
+//   color: aliceblue;
+//   border-collapse: separate;
+//   border-spacing: 0 5px;
+// }
+
+// .admin-content-table a {
+//   text-decoration: none;
+//   color: #1c1c1c;
+// }
+
+// .admin-content-table thead {
+//   background: #1c1c1c;
+//   color: aliceblue;
+// }
+
+// .admin-content-table thead tr th {
+//   font-size: 1.3rem;
+//   font-weight: normal;
+//   padding: 0.8rem;
+//   vertical-align: top;
+//   border-top: 1px solid #aab7b8;
+// }
+
+// .admin-content-table thead tr th:first-child {
+//   border-top-left-radius: 12px;
+//   border-bottom-left-radius: 12px;
+//   // border-right: none;
+//   border-left: 1px solid #aab7b8;
+// }
+
+// .admin-content-table thead tr th:last-child {
+//   border-top-right-radius: 12px;
+//   border-bottom-right-radius: 12px;
+//   border-right: 1px solid rgba(255, 255, 255, 0.2);
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+//   // border-left: none;
+// }
+
+// .admin-content-table tbody tr td {
+//   // font-size: 1.3rem;
+//   padding: 0.8rem;
+//   vertical-align: top;
+//   border-top: 1px solid #aab7b8;
+//   border-bottom: 1px solid #aab7b8;
+//   text-align: center;
+//   align-content: center;
+//   background: rgba(255, 255, 255, 0.15);
+//   -webkit-backdrop-filter: blur(5px);
+//   backdrop-filter: blur(5px);
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+// }
+
+// .admin-content-table tbody tr {
+//   transition: 0.6s;
+// }
+
+// .admin-content-table tbody tr td:first-child {
+//   border-top-left-radius: 12px;
+//   border-bottom-left-radius: 12px;
+//   // border-right: none;
+//   border-left: 1px solid #aab7b8;
+// }
+
+// .admin-content-table tbody tr td:last-child {
+//   border-top-right-radius: 12px;
+//   border-bottom-right-radius: 12px;
+//   border-right: 1px solid rgba(255, 255, 255, 0.2);
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+//   // border-left: none;
+//   font-size: 18px;
+// }
+
+// .admin-content-table tbody tr:hover {
+//   background: var(--bg);
+//   transition: 0.2s;
+//   overflow: hidden;
+// }
+// // .admin-content-table tbody tr:active {
+// //   transform: scale(0.9);
+// //   transition: 0.1s;
+// // }
+
+// .admin-content-table button {
+//   display: inline-block;
+//   border: none;
+//   // margin: 0 auto;
+//   padding: 0.2rem;
+//   outline: none;
+//   cursor: pointer;
+//   font-size: large;
+//   background: none;
+//   transition: transform 0.2s;
+// }
+// .admin-content-table button:active {
+//   transform: scale(0.8);
+// }

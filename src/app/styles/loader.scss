@@ -29,22 +29,18 @@
   animation-timing-function: ease;
 }
 
-.loader:nth-child(2) {
+.loader:nth-child(3) {
   font-size: 100px;
 }
 
 .loader__container {
+  margin: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-// .circle::after {
-//   content: '';
-//   position: relative;
-//   width: 30px;
-//   height: 3px;
-//   background: red;
-//   top: 10px;
-// left: 9000px;
-// }
+.loader__container img {
+  display: block;
+  height: 100px;
+  filter: invert(18%) sepia(100%) saturate(3009%) hue-rotate(225deg) brightness(77%) contrast(97%);
+}

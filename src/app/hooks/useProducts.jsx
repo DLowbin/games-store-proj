@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import productsService from '../services/products.service';
-import Loader from '../components/loader';
+import Loader from '../components/common/loader';
 import { useItems } from '../store/productsStore';
 
 const ProductContext = React.createContext();
@@ -22,14 +22,13 @@ const ProductProvider = ({ children }) => {
   async function getProducts() {
     try {
       const { content } = await productsService.get();
-
-      setProducts(content);
+      // setProducts(content);
       setCurItems(content);
       setIsLoading(false);
     } catch (error) {}
   }
   return (
-    <ProductContext.Provider value={{ products }}>
+    <ProductContext.Provider value={{ products, getProducts }}>
       {!isLoading ? children : <Loader />}
     </ProductContext.Provider>
   );

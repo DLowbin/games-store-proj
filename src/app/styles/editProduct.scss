@@ -3,19 +3,19 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: baseline;
-  min-width: 900px;
-  max-width: 100%;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  padding: 30px;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 0.6, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  align-items: center;
+  // min-width: 900px;
+  // max-width: 100%;
+  // flex-wrap: wrap;
+  // flex-grow: 1;
+  // padding: 30px;
+  // font-family: 'Poppins', sans-serif;
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(2, 0, 0.6, 1) 0%,
+  //   rgba(9, 9, 121, 1) 35%,
+  //   rgba(0, 212, 255, 1) 100%
+  // );
 }
 
 .edit-container .product__card {
@@ -41,7 +41,6 @@
   height: 450px;
   padding: 0;
   border-radius: 10px;
-
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -59,7 +58,7 @@
   outline: none;
   padding: 10px 20px;
   margin-top: 10px;
-  border-radius: 35px;
+  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -76,6 +75,7 @@
   cursor: pointer;
   margin-bottom: 20px;
   font-weight: 600px;
+  border-radius: 12px;
 }
 
 .edit-container .product__card .card__button span.active {
@@ -95,6 +95,7 @@
 .custom-select {
   position: relative;
 }
+
 .custom-arrow {
   position: absolute;
   top: 18px;
@@ -129,7 +130,7 @@
   outline: none;
   padding: 10px 50px 10px 20px;
   margin-top: 10px;
-  border-radius: 35px;
+  border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -163,12 +164,6 @@
   padding-left: 20px;
   color: #666;
 }
-// {
-//   "rules": {
-//     ".read": "now < 1714510800000",  // 2024-5-1
-//     ".write": "now < 1714510800000",  // 2024-5-1
-//   }
-// }
 
 .file-select {
   color: #fff;

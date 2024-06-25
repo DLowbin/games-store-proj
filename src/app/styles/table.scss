@@ -1,48 +1,249 @@
-.product-table {
+// :root {
+//   --clr: rgba(2, 0, 0.6, 1);
+// }
+// background-color: var(--bg);
+.orders-box,
+.product-box,
+.users-box {
+  position: relative;
   width: 100%;
-  border-collapse: collapse;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  padding: 25px;
+}
+
+.admin-content-table {
+  width: 100%;
+  // border-collapse: collapse;
+  color: aliceblue;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.admin-content-table a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.admin-content-table thead {
+  background: #1c1c1c;
   color: aliceblue;
 }
 
-.product-table thead {
-  background: #424949;
-  color: aliceblue;
-}
-
-.product-table thead tr th {
+.admin-content-table thead tr th {
   font-size: 1.3rem;
+  font-weight: normal;
   padding: 0.8rem;
   vertical-align: top;
-  border-left: 1px solid #aab7b8;
-  border-right: 1px solid #aab7b8;
+  border-top: 1px solid #aab7b8;
 }
 
-.product-table tbody tr td {
+.admin-content-table thead tr th:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  // border-right: none;
+  border-left: 1px solid #aab7b8;
+}
+
+.admin-content-table thead tr th:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  // border-right: 1px solid rgba(255, 255, 255, 0.2);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  // border-left: none;
+}
+
+.admin-content-table tbody tr td {
   // font-size: 1.3rem;
   padding: 0.8rem;
   vertical-align: top;
-  border-left: 1px solid #aab7b8;
-  border-right: 1px solid #aab7b8;
+  border-top: 1px solid #aab7b8;
+  border-bottom: 1px solid #aab7b8;
   text-align: center;
   align-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.product-table tbody tr td:nth-child(1) {
-  border-left: none;
+.admin-content-table tbody tr {
+  transition: 0.6s;
 }
 
-.product-table button {
+.admin-content-table tbody tr td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  // border-right: none;
+  border-left: 1px solid #aab7b8;
+}
+
+.admin-content-table tbody tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  // border-left: none;
+  font-size: 18px;
+}
+
+.admin-content-table tbody tr:hover {
+  background: var(--bg);
+  transition: 0.2s;
+  overflow: hidden;
+  // transform: scale(0.75);
+}
+
+.admin-content-table.orders tbody tr:active {
+  transform: scale(0.9);
+  transition: 0.1s;
+}
+
+.admin-content-table button {
   display: inline-block;
   border: none;
-  margin: 0 auto;
-  padding: 0.4rem;
+  // margin: 0 auto;
+  padding: 0.2rem;
   outline: none;
   cursor: pointer;
-  font-size: x-large;
+  font-size: large;
   background: none;
+  transition: transform 0.2s;
 }
-.product-table button:active {
-  // color: aliceblue;
+.admin-content-table button:active {
   transform: scale(0.8);
-  transition: 0.2s;
+}
+
+.product-table select {
+  appearance: none;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 50px 10px 20px;
+  margin-top: 10px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product-table input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.table-search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // background-color: #1c1c1c;
+  margin: 0%;
+  width: 50%;
+}
+.table-search-filter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0px;
+  // width: 250px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: none;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  font-size: 24px;
+  color: #fff;
+  padding: 6px 0 6px 0;
+}
+
+.table-search-filter i {
+  padding: 0 10px 0 10px;
+}
+
+.table-search-filter i:first-child {
+  padding-left: 16px;
+}
+
+.table-search-filter i:last-child {
+  padding-right: 16px;
+}
+
+.table-search.filter i:active {
+  transform: scale(0.85);
+}
+
+.table-search.filter i.active {
+  color: #0fb7d1;
+  text-shadow: 0 0 1px #0fb7d1, 0 0 1px #0fb7d1, 0 0 1px #0fb7d1, 0 0 4px #0fb7d1;
+  transition: 0.1s;
+  // text-shadow: 0 0 5px var(--bg), 0 0 15px var(--bg), 0 0 30px var(--bg), 0 0 60px var(--bg);
+}
+
+.table-search input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  // margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.table-search i.close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-size: xx-large;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.table-search i.close:active {
+  transform: scale(0.7);
+}
+
+.table-search i.icon {
+  position: absolute;
+  left: 6px;
+  top: 9px;
+  font-size: x-large;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.user-info {
+  position: fixed;
+  // height: 30vh;
+  width: 50%;
+  background: red;
+  margin-top: 6px;
+  // padding-top: 8%;
 }
