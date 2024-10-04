@@ -74,11 +74,7 @@ const AddProduct = () => {
     // });
     uploadTask.on(
       'state_changed',
-      (snapshot) => {
-        // const prog = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        // setProgress((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
-        // console.log('Upload is ' + progress + '% done');
-      },
+      (snapshot) => {},
       (error) => {},
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {

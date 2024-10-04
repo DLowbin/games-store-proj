@@ -12,7 +12,7 @@ const Search = ({ currentSearchQuery, handleSearch, handleQuery }) => {
             type="text"
             id="searchForm"
             className="form__input"
-            placeholder="ПОИСК"
+            placeholder="ПОИСК ПО САЙТУ"
             onChange={handleQuery}
             value={currentSearchQuery}
             onKeyDown={handleSearch}

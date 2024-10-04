@@ -35,7 +35,7 @@
     "category": "d01dd088750b48b181a964e105addecc",
     "name": "Demon Souls",
     "image": "https://firebasestorage.googleapis.com/v0/b/games-store-project-eb08a.appspot.com/o/images%2Fdemon_souls.jpeg?alt=media&token=5b585986-35bb-4261-8403-ad7d7c71af51",
-    "price": 5999,
+    "initialprice": 5999,
     "discount": 0
   },
   {

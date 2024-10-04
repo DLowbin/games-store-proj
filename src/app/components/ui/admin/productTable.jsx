@@ -49,17 +49,14 @@ const ProductTable = () => {
   const handleSearch = (target) => {
     setQuery(target.value);
   };
-  // useEffect(() => {
-  //   console.log(query);
-  // }, [query]);
 
   const filteredProducts = query ? search(products, ['id', 'name'], query) : products;
-
   const sortedProducts = _.orderBy(filteredProducts, [sortBy.path], [sortBy.order]);
   const columns = {
     name: { path: 'name', name: 'Наименование' },
     category: { path: 'category', name: 'Категория' },
     id: { path: 'id', name: 'ID товара' },
+    discount: { path: 'discount', name: 'Акция' },
     price: { path: 'price', name: 'Стоимость' },
     edit: { name: 'Ред' },
   };
@@ -108,7 +105,8 @@ const ProductTable = () => {
                   <td>{prod.name}</td>
                   <td>{getCategory(prod.category)}</td>
                   <td>{prod.id}</td>
-                  <td>{prod.price}</td>
+                  <td>{prod.discount}</td>
+                  <td>{prod.initialprice}</td>
                   <td>
                     <button>
                       <Link to={`/showcase/${prod.id}/edit`}>

@@ -16,7 +16,6 @@ const EditProduct = () => {
 
   const { categories } = useCategories();
   const products = useItems((state) => state.items);
-  const setProducts = useItems((state) => state.setItems);
 
   const params = useParams();
   const history = useHistory();
@@ -62,9 +61,7 @@ const EditProduct = () => {
 
   async function deleteProd(e) {
     e.preventDefault();
-    const sortedProducts = products.filter((item) => item.id !== currentProduct.id);
     history.push('/showcase');
-
     try {
       await httpService.delete('products/' + data.id, data);
       await getProducts();

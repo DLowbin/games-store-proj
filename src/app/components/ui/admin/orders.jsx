@@ -12,10 +12,10 @@ const Orders = ({ currentOrderId }) => {
   const [currentFilter, setCurrentFilter] = useState(undefined);
 
   const columns = {
-    id: { path: 'id', name: 'Номер заказа' },
-    date: { path: 'date', name: 'Дата' },
-    time: { path: 'time', name: 'Время' },
-    client: { path: 'client', name: 'Клиент' },
+    order: { path: 'order', name: 'Номер заказа' },
+    date: { path: 'timestamp.date', name: 'Дата' },
+    time: { path: 'timestamp.time', name: 'Время' },
+    client: { path: 'user.name', name: 'Клиент' },
     satus: { path: 'status', name: 'Статус' },
   };
 
@@ -60,8 +60,13 @@ const Orders = ({ currentOrderId }) => {
             <OrdersTable
               columns={columns}
               statusList={statusList}
+              // orders={
+              //   currentFilter ? filteredOrders(search(orders, ['order'], searchQuery)) : orders
+              // }
               orders={
-                currentFilter ? filteredOrders(search(orders, ['order'], searchQuery)) : orders
+                currentFilter
+                  ? filteredOrders(search(orders, ['order'], searchQuery))
+                  : search(orders, ['order'], searchQuery)
               }
             />
             {currentOrderId && (

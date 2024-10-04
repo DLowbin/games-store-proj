@@ -3,22 +3,10 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { useAuth } from '../hooks/useAuth';
 import Loader from './common/loader';
 import PricesBlock from './pricesBlock';
-import { initial } from 'lodash';
 
 const Product = ({ items, handleAddToCart, isLoading }) => {
   const { currentUser } = useAuth();
   console.log(currentUser);
-
-  // useEffect(() => {
-  //   getProd();
-  // }, []);
-  // async function getProd() {
-  //   try {
-  //     const prod = await productsService.get();
-  //     setData(prod);
-  //     setIsLoading(false);
-  //   } catch (error) {}
-  // }
 
   <></>;
   return !isLoading ? (
@@ -35,10 +23,9 @@ const Product = ({ items, handleAddToCart, isLoading }) => {
               alt=""
             />
           </div>
-
           <span>{item.name}</span>
           <div className="product-price-block">
-            {item.discount ? (
+            {item.discount > 0 ? (
               <PricesBlock initialprice={item.initialprice} discountprice={item.discountprice} />
             ) : (
               item.initialprice

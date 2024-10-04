@@ -44,7 +44,7 @@ const OrdersTable = ({ columns, orders, statusList }) => {
 
   // const sortedOrders = _.orderBy(filteredProducts, [sortBy.path], [sortBy.order]);
   const history = useHistory();
-  const [sortBy, setSortBy] = useState({ path: 'date', order: 'asc' });
+  const [sortBy, setSortBy] = useState({ path: 'client', order: 'asc' });
   const sortedOrders = _.orderBy(orders, [sortBy.path], [sortBy.order]);
 
   const handleOrder = (orderId) => {

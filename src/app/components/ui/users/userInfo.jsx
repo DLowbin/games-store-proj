@@ -4,9 +4,9 @@ import { useHistory, Link } from 'react-router-dom/cjs/react-router-dom.min';
 const UserInfo = ({ currentUserId, users }) => {
   const history = useHistory();
   const [{ id, email, isAdmin, name, orders }] = users.filter((user) => user.id === currentUserId);
-  let us = users.filter((user) => user.id === currentUserId);
-  console.log(us[0]);
-  console.log(orders);
+  // let us = users.filter((user) => user.id === currentUserId);
+  // console.log(us[0]);
+  // console.log(orders);
   const columns = {
     timestamp: { path: 'date', name: 'Дата' },
     orderId: { path: 'number', name: 'Номер' },
@@ -36,14 +36,7 @@ const UserInfo = ({ currentUserId, users }) => {
             <span>{`Контактные данные : ${email}`}</span>
             <span>{`Дата регистрации : `}</span>
             <span>{`Статус : ${getUserStatus(isAdmin)}`}</span>
-            <span>{`Всего заказов : ${orders.length}`}</span>
-            {/* <span>{`Стоимость : `}</span>
-        <span>{`Способ оплаты : `}</span>
-        <span>{`Доставка : `}</span> */}
-            {/* <span>
-        {`Статус заказа : ${getStatus(currentOrder).name} `}
-        <i className={getStatus(currentOrder).icon}></i>
-      </span> */}
+            <span>{orders ? `Всего заказов : ${orders.length}` : 'Нет заказов'}</span>
           </div>
           <div className="payload active">
             <table className="admin-content-table orders">

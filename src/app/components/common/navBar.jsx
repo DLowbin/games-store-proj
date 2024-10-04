@@ -14,7 +14,7 @@ const NavBar = () => {
 
   const stateCategories = useStateCategories((state) => state.categories);
 
-  console.log(stateCategories);
+  // console.log(stateCategories);
 
   const cartItems = useCart((state) => state.cartItems);
   const displayCart = useCart((state) => state.setDisplayCart);
@@ -80,9 +80,6 @@ const NavBar = () => {
 
   return (
     <>
-      {/* <div
-        className={menuActive ? 'menu-toggle active' : 'menu-toggle'}
-        onClick={handleToggle}></div> */}
       <div className={menuActive ? 'sidebar active' : 'sidebar'}>
         <ul>
           <li className="logo">

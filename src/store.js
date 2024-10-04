@@ -65,7 +65,7 @@ export const useCart = create((set) => ({
     payment: 'Банковской картой онлайн',
     delivery: 'Доставка',
     payload: '',
-    status: 'pending',
+    status: 'neworder',
     timestamp: '',
   },
   setUserOrder: (data) =>

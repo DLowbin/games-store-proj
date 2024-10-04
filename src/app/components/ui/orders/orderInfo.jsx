@@ -7,7 +7,6 @@ const OrderInfo = ({ productId, orders }) => {
     (order) => order.order === productId
   );
   const currentOrder = orders.filter((order) => order.order === productId);
-  // console.log(currentOrder[0]);
 
   const statusList = [
     { value: 'neworder', name: 'Новый заказ', icon: 'fa-solid fa-circle-exclamation' },
@@ -20,7 +19,6 @@ const OrderInfo = ({ productId, orders }) => {
     const [status] = statusList.filter((stat) => stat.value === order.status);
     console.log(status);
     return status;
-    // console.log(order.status);
   };
 
   const columns = {

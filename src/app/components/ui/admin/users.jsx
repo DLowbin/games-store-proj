@@ -7,6 +7,7 @@ import UserInfo from '../users/userInfo';
 const Users = ({ currentUserId }) => {
   console.log(currentUserId);
   const { users } = useUsers();
+
   const history = useHistory();
   const columns = {
     name: { path: 'name', name: 'Имя' },
