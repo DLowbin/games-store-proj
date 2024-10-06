@@ -10,6 +10,7 @@ export const useUsers = () => {
 
 const UsersProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
+   // REVIEW: какой то мусор
   // const products = useItems((state) => state.items);
   // const setProducts = useItems((state) => state.setItems);
   const [isLoading, setIsLoading] = useState(true);

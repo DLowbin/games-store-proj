@@ -59,17 +59,17 @@ const Showcase = () => {
   // const handlePageChange = (pageIndex) => {
   //   setCurrentPage(pageIndex);
   // };
-
+ // REVIEW: useCallback
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
   };
-
+// REVIEW: useCallback
   const handleCategoryChange = (event) => {
     setCurrentCategory({ name: event.target.name, content: event.target.textContent });
     setCurrentPage(1);
     setSearchQuery('');
   };
-
+// REVIEW: useCallback
   const handleCategoryClear = () => {
     setCurrentCategory('');
     setSearchQuery('');

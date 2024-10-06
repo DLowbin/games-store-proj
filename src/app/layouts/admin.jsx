@@ -9,6 +9,10 @@ import AddProduct from '../components/ui/admin/addProduct';
 const Admin = () => {
   const params = useParams();
   const { option, parameter } = params;
+  // REVIEW: Все что рендерит jsx выносить в отдельыне компоненты
+  // конкретно тут:
+  // 1) renderSwitch очень странное название, не понятно что рендерит(ПЕРЕИМЕНОВАТЬ ОСМЫСЛЕННО)
+  // 2) сделать компонент для рендера опшинов, убрать отсюда опшины, тк они не нужны  AdminPannel
   function renderSwitch(option) {
     switch (option) {
       case 'products':

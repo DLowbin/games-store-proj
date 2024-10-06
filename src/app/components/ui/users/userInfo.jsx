@@ -43,6 +43,7 @@ const UserInfo = ({ currentUserId, users }) => {
               <thead>
                 <tr>
                   {Object.keys(columns).map((column) => (
+                  /* REVIEW: в отдельный компонент */
                     <th scope="col" key={column}>
                       {columns[column].name}
                     </th>
@@ -51,7 +52,9 @@ const UserInfo = ({ currentUserId, users }) => {
               </thead>
               {orders && (
                 <tbody>
+
                   {orders.map((order) => (
+                  /* REVIEW: В отдельный компонент */
                     <tr
                       key={order.orderId}
                       onClick={() => history.push(`/admin/orders/${order.orderId}`)}>

@@ -1,7 +1,9 @@
 import httpService from './http.service';
 
+// REVIEW: константы в отдельный файл
 const productsEndpoint = 'products/';
 const categoriesEndpoint = 'categories/';
+// REVIEW:  не используется
 const ordersEndpoint = 'orders/';
 
 const productsService = {

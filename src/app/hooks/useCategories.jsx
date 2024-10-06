@@ -11,6 +11,8 @@ export const useCategories = () => {
 const CategoriesProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  // REVIEW: Опять же, чем отличается categories от StateCategories?
+  // если нужны данные тут и в сторе, то почему бы не записать их в стор и не подписаться на их обновление?
   const setStateCategories = useStateCategories((state) => state.setCategories);
   useEffect(() => {
     getCat();

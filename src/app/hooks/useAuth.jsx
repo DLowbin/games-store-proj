@@ -8,6 +8,7 @@ import { useUsers } from '../store/usersStore';
 import Loader from '../components/common/loader';
 
 export const httpAuth = axios.create({
+  // REVIEW: константы + env, Никакого хардкода быть не должно
   baseURL: 'https://identitytoolkit.googleapis.com/v1/',
   params: { key: process.env.REACT_APP_FIREBASE_KEY },
 });
@@ -45,9 +46,11 @@ const AuthProvider = ({ children }) => {
     } catch (error) {
       errorCatcher(error);
       const { code, message } = error.response.data.error;
+      // REVIEW: какой то мусор
       console.log(code, message);
       if (code === 400) {
         switch (message) {
+          // REVIEW: все статусы и ишибки в константы
           case 'INVALID_PASSWORD':
             throw new Error('Email или пароль введены некорректно');
 

@@ -10,6 +10,7 @@ export const useProducts = () => {
 };
 
 const ProductProvider = ({ children }) => {
+   // REVIEW: не используется
   const [products, setProducts] = useState([]);
   // const products = useItems((state) => state.items);
   // const setProducts = useItems((state) => state.setItems);

@@ -3,6 +3,7 @@ import { create } from 'zustand';
 export const useUsers = create((set) => ({
   currentUser: undefined,
   setCurrentUser: (user) =>
+    // REVIEW: state не используется
     set((state) => {
       return { currentUser: user };
     }),
