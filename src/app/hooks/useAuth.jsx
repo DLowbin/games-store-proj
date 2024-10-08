@@ -42,6 +42,9 @@ const AuthProvider = ({ children }) => {
         returnSecureToken: true,
       });
       setTokens(data);
+      // REVIEW: перфикс get у методов обозначает что функция должна вернуть значение,
+      // в данном случе это как миниму fetch или set. 
+      // Джае в этом случае функция должна вернуть значение, а не делать что то со стейтом в другом месте
       getUserData();
     } catch (error) {
       errorCatcher(error);
@@ -99,6 +102,7 @@ const AuthProvider = ({ children }) => {
     try {
       const { content } = await userService.getCurrentUser();
       console.log(content);
+      // REVIEW: чем CurrentUser отличается от CurrentUserState?
       setCurrentUser(content);
       setCurrentUserState(content);
     } catch (error) {
