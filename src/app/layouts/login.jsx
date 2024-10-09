@@ -5,9 +5,12 @@ import RegistrationForm from '../components/common/login/registrationForm';
 import LoginForm from '../components/common/login/loginForm';
 
 const Login = () => {
+  // REVIEW: Очень странная свзь между type и formType, выглядит как одно и тоже
+  // возможно тут архитектурный или логический просчет. Нужно подумать как его исправить
   const { type } = useParams();
   const [formType, setFormType] = useState(type === 'register' ? type : 'login');
 
+  // REVIEW: useCallback
   const toggleFormType = () => {
     setFormType((prevState) => (prevState === 'login' ? 'register' : 'login'));
   };

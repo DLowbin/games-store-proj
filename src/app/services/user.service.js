@@ -1,6 +1,7 @@
 import httpService from './http.service';
 import localStorageService from './localStorage.service';
 
+// REVIEW:  константы в отдельный файл
 const usersEndpoint = 'users/';
 
 const userService = {

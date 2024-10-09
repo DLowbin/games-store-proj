@@ -15,6 +15,8 @@ import Loader from './app/components/common/loader';
 
 // import 'bootstrap/dist/css/bootstrap.css';
 
+// REVIEW: все url нужно выносить в константы, на случай если изменится роутинг или апи, не приедтся шертить весь проект на их поиски
+
 function App() {
   return (
     <>

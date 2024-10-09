@@ -35,6 +35,8 @@ const OrderCard = ({
   //   { name: 'Картой при получении', value: 'Картой при получении' },
   //   { name: 'Наличными курьеру', value: 'Наличными курьеру' },
   // ];
+
+  // REVIEW: большую часть верски можно разбить на кмпонены и параметризировать
   return (
     <div className={'order' + (orderField ? ' active' : '')}>
       <div className="order__card">

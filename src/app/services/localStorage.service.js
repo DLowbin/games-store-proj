@@ -6,6 +6,16 @@ const USER_CART_KEY = 'games-store-cart';
 
 // ---> localId(id новосозданного пользователя) возвращается в payload после выполнения signUp
 
+/*  
+  REVIEW: Это не LocalStorageServise, это сервис для работы с токеном через LocalStorage
+  для авторизации лучше работать с куками, тк им можно задавать срок жизни, и не придется стороить костыли
+  с проверкой времени жизни через запись Date
+
+  Если же хочется остаться с LocakStorege, то пишется обертка вокруг системного localStorage, где будут реализованы
+  механизм записи времени жизни данных, и методы доступа get/set; Затем вокруг него строится сервис по авторизации и хранению токенов
+
+*/
+
 export function setTokens({ refreshToken, idToken, expiresIn = 3600, localId }) {
   const expiresDate = new Date().getTime() + expiresIn * 1000;
   localStorage.setItem(USERID_KEY, localId);

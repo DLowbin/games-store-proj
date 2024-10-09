@@ -14,7 +14,10 @@ function Items({ items, isUser }) {
   };
 
   useEffect(() => {
+    // REVIEW: вообще непонятно зачем что то читаь из ЛС, и потом записать туда снова в другом виде?
+    // в этом случае лучше нормализовать данные или сделать селектор
     localStorage.setItem('games-store-cart', JSON.stringify(cartItems.map((el) => el.id)));
+    // REVIEW: Опять же подписка на данные, см случай в loginFormNO
   }, [cartItems]);
 
   const handleAddToCart = (item) => {

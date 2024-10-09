@@ -8,6 +8,7 @@ const OrderInfo = ({ productId, orders }) => {
   );
   const currentOrder = orders.filter((order) => order.order === productId);
 
+  /* REVIEW: в константы */
   const statusList = [
     { value: 'neworder', name: 'Новый заказ', icon: 'fa-solid fa-circle-exclamation' },
     { value: 'pending', name: 'В обработке', icon: 'fa-regular fa-hourglass-half' },
